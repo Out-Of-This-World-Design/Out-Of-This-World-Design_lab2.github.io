@@ -1,0 +1,277 @@
+:root {
+  --flag-red: rgb(155, 50, 46);
+  --flag-blue: rgb(13, 65, 133);
+  --flag-white: rgb(255, 255, 255);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Video */
+video {
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: 100%;
+  background-image: url(./img/flag.png);
+  min-width: 100%;
+}
+
+#content {
+  margin: 0;
+  padding: 0;
+  /* background-color: black;
+  background-image: url(./img/Welcome.jpg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+/* Navbar */
+
+#navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 65px;
+  background: var(--flag-blue) !important; 
+  z-index: 4;
+  border-bottom: 10px solid var(--flag-red);
+}
+
+
+.navbar-brand {
+  text-transform: uppercase;
+}
+
+.navbar-brand img {
+  height: 30px;
+  padding-right: 1em;
+  width: auto;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #5480dd71;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(155, 50, 46);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Constitution Sections */
+#constitution {
+  transition: all ease-in-out .3s;
+  width: 50vw;
+  height: calc(100vh - 65px);
+  margin-top: 65px;
+  overflow: auto;
+  padding: 2em;
+  scroll-behavior: smooth;
+  background: rgba(250, 245, 240, 0.692);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  
+
+}
+
+#constitution-narration {
+  height: 100vh;
+  width: 50vw;
+  border-left: 5px solid black;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#constitution-narration p {
+  width: 60%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.788);
+  color: whitesmoke;
+  padding: 1em;
+  border-radius: 1em;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  z-index: 10;
+}
+
+#constitution h1 {
+  text-align: center;
+  margin-top: 2em;
+  font-family: 'Tangerine', cursive;
+  font-size: 4em;
+  color: rgba(0,0,0,0.6);
+  text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -5px 35px rgba(255,255,255,0.3);
+}
+
+#constitution h4 {
+  margin-top: 70px;
+  margin-bottom: 10px;
+  color: rgba(0,0,0,0.6);
+  text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -5px 35px rgba(255,255,255,0.3);
+}
+
+#constitution p {
+  transition: all ease-in-out .3s;
+  border: none;
+  cursor: pointer;
+}
+
+#constitution p:hover {
+  color: rgb(255, 255, 255);
+  transform: scale(1.05);
+  background-color: #b22234;
+  border-radius: 1em;
+  padding: 1em;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.active {
+  color: rgb(255, 255, 255) !important;
+  transform: scale(1.05) !important;
+  background-color: #3c3b6e !important;
+  border-radius: 1em !important;
+  padding: 1em !important;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px !important;
+  transform: translateX(1em) !important;
+}
+
+
+/* Learn More */
+#learn-more {
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+  background-image: url('./img/flag.png');
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  text-shadow: rgb(0, 0, 0) 1px 1px 10px;
+  border-radius: 50%;
+  z-index: 4;
+  border: 6px solid rgba(255, 255, 255, 0.76);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  transition: all ease-in-out .25s;
+  cursor: pointer;
+}
+
+#learn-more:hover {
+  transform: scale(1.2);
+}
+
+#learn-more:hover ~ #more-title {
+  transform: translatex(-130px);
+}
+
+#more-title {
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  transition: all ease-in-out .25s;
+  font-size: 2em;
+  text-shadow: rgb(0, 0, 0) 1px 1px 10px;
+  color: white;
+  font-weight: bold;
+}
+
+/* button */
+.button-53 {
+  background-color: #3DD1E7;
+  border: 0 solid #E5E7EB;
+  box-sizing: border-box;
+  color: #000000;
+  display: flex;
+  font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1.75rem;
+  padding: .75rem 1.65rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none #000000 solid;
+  text-decoration-thickness: auto;
+  width: 100%;
+  max-width: 460px;
+  position: relative;
+  cursor: pointer;
+  transform: rotate(-2deg);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-53:focus {
+  outline: 0;
+}
+
+.button-53:after {
+  content: '';
+  position: absolute;
+  border: 1px solid #000000;
+  bottom: 4px;
+  left: 4px;
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
+}
+
+.button-53:hover:after {
+  bottom: 2px;
+  left: 2px;
+}
+
+@media (min-width: 768px) {
+  .button-53 {
+    padding: .75rem 3rem;
+    font-size: 1.25rem;
+  }
+}
