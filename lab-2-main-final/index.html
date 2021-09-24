@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constitution of the United States</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <video src="img/background.mp4" autoplay loop></video>
+    <div id="content">
+    <!-- Navbar Section -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark" >
+        <div class="container-fluid">
+            <!-- Navbar Brand - From JSON-->
+            <a class="navbar-brand" href="#" id="navbar-brand"></a>
+
+            <!-- Toggle Button for Collapsing -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span> 
+            </button>
+
+            <!-- Navbar Content -->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav" id="navbar-links">
+                    <!-- Nav list pulled from JSON -->
+                </ul>
+             </div>
+        </div>
+    </nav>
+
+    <!-- Constitution Section -->
+    <div id="constitution">
+        <!-- Constitution pulled from JSON -->    
+    </div>
+
+    <div id="constitution-narration">
+        <p>Click Any Paragraph to Learn More!</p>
+    </div>
+
+    <!-- Learn More -->
+    
+    <button id="learn-more" data-bs-toggle="modal" data-bs-target="#more-modal" data-bs-whatever="@getbootstrap"></button>
+    <div id="more-title">Learn More</div>
+    <div class="modal fade" id="more-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">About Us</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h5 class="text-center">This app was created for Constitution Day 2021.  The theme for our design is the first amendment, right to assemble.</h5>  
+              <blockquote class="text-center">"Web Systems Development, Fall 2021"</blockquote>
+              <hr>
+              Background Video: <a href="https://www.youtube.com/watch?v=9h7xD4mIcdw">Ronald Reagan Speech</a><br>
+              <small class="text-center">Created By: Sean Block, </small>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <!-- Custom Javascript / Jquery -->
+    <script src="style.js"></script>
+
+</body>
+</html>
